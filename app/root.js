@@ -4,14 +4,10 @@ import {StackNavigator} from 'react-navigation'
 import homePage from './home/index'
 
 const MyRoutes = StackNavigator({
-    Home: {
-        screen: homePage,
-        navigationOptions: {
-            header: null
-        }
-    }
+    Home: {screen: homePage}
 }, {
-    initialRouteName: 'Home'
+    initialRouteName: 'Home',
+    headerMode: 'none'
 })
 
 export default MyRoutes

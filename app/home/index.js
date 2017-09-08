@@ -1,8 +1,11 @@
 import React, {Component} from 'react'
 import {TabNavigator} from 'react-navigation'
 import {View, Text, Image, StyleSheet, StatusBar} from 'react-native'
+import Color from '../config/colors'
+
 import Home from './home'
 import User from './user'
+
 
 const MyTab = TabNavigator({
     Home: {
@@ -30,6 +33,7 @@ const MyTab = TabNavigator({
         },
     }
 }, {
+    //几个页面不会同时加载，页面显示更快
     lazy: true,
     tabBarPosition: 'bottom',
     animationEnabled:true,
@@ -48,10 +52,10 @@ const MyTab = TabNavigator({
         indicatorStyle: {
             height: 0
         },
+        //安卓坑，安卓默认隐藏了tabbar的icon
         showIcon: true,
-        activeTintColor:'#4ECBFC',
-        // inactiveBackgroundColor:'white',
-        inactiveTintColor:'#999',
+        activeTintColor:Color.mainColor.main,
+        inactiveTintColor:'#666',
         pressColor: "#aaaaaa"
     }
 });

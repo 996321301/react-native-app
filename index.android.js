@@ -10,7 +10,7 @@ import {
   View,
   Text
 } from 'react-native';
-import Root from './app/root'
+import Root from './app/index'
 
 // class Root extends Component{
 //   constructor(props){
