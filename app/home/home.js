@@ -13,6 +13,10 @@ export default class homeIndex extends Component{
                 <StatusBar />
                 <View style={Style.navigator}></View>
                 <Text>我是首页哦</Text>
+                <Image
+                    source={require("../resource/icons/account.png")}
+                    style={{width: 30, height: 30}}
+                />
             </View>
         )
     }

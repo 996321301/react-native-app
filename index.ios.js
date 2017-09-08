@@ -9,5 +9,5 @@ import {
   AppRegistry
 } from 'react-native';
 import Root from './app/root'
-
+//为了一套代码两端公用，统一入口
 AppRegistry.registerComponent('myapp', () => Root);

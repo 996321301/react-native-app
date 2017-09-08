@@ -4,10 +4,25 @@
  * @flow
  */
 
-import React from 'react';
+import React, {Component} from 'react';
 import {
-  AppRegistry
+  AppRegistry,
+  View,
+  Text
 } from 'react-native';
 import Root from './app/root'
+
+// class Root extends Component{
+//   constructor(props){
+//     super(props)
+//   }
+//   render(){
+//     return(
+//       <View>
+//         <Text>dsadasdas</Text>
+//       </View>
+//     )
+//   }
+// }
 
 AppRegistry.registerComponent('myapp', () => Root);
